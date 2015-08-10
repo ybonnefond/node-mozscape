@@ -1,0 +1,34 @@
+{
+  "name": "moz",
+  "description": "Moz API Nodejs client",
+  "keywords": ["moz", "moz.com", "mozscape", "seo"],
+  "homepage": "https://github.com/optimizme/node-moz",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/optimizme/node-moz.git"
+  },
+  "bugs": {
+    "url": "http://github.com/optimizme/node-moz/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Yannick Bonnefond",
+    "email": "yannick.bonnefond@gmail.com",
+    "url": "http://github.com/ybonnefond/"
+  },
+  "version": "0.0.1",
+  "author": "Bambou",
+  "dependencies": {
+    "request": "^2.60.0"
+  },
+  "devDependencies": {
+    "jasmine": "^2.3.2"
+  },
+  "main": "./lib/Moz.js",
+  "scripts": {
+    "test": "jasmine JASMINE_CONFIG_PATH=spec/support/jasmine.json"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
