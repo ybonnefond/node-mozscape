@@ -35,7 +35,7 @@ Available options:
     .sort('page_authority')
     .limit(10)
 
-  moz.exec(query, function(err, callback){
+  moz.send(query, function(err, callback){
 
   });
 ```
@@ -51,7 +51,7 @@ To use the batch mode, simply pass an array to the `targets` method. Batch mode 
     .sort('page_authority')
     .limit(10)
 
-  moz.exec(query, function(err, callback){
+  moz.send(query, function(err, callback){
 
   });
 ```
@@ -70,7 +70,7 @@ Metadata request are done in a similar fashion
   var query = moz.newQuery('metadata')
     .target('last_update');
 
-  moz.exec(query, function(err, result){
+  moz.send(query, function(err, result){
 
   });
 ```

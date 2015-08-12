@@ -100,8 +100,8 @@ describe('Query', function () {
     it('should send a simple request', function(done){
       var query = moz.newQuery('url-metrics')
         .target(conf.target)
-        .cols(['title', 'url', 'moz_rank', 'page_authority']);
-      moz.exec(query, function(err, result){
+        .cols(['title', 'canonical_url', 'moz_rank_url', 'page_authority']);
+      moz.send(query, function(err, result){
         expect(err).toBeNull();
         expect(result).toBeDefined();
         done();
@@ -113,7 +113,7 @@ describe('Query', function () {
   it('should send a metadata command', function (done) {
     var query = moz.newQuery('metadata')
       .target('last_update');
-    moz.exec(query, function(err, result){
+    moz.send(query, function(err, result){
       expect(err).toBeNull();
       expect(result).toBeDefined();
       done();
