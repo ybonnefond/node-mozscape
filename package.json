@@ -1,7 +1,7 @@
 {
-  "name": "node-mozscape",
+  "name": "moz",
   "description": "Moz API Nodejs client",
-  "keywords": ["moz", "moz.com", "mozscape", "seo"],
+  "keywords": ["moz", "moz.com", "mozscape", "seo", "moz api", "mozscape api"],
   "homepage": "https://github.com/optimizme/node-moz",
   "repository": {
     "type": "git",
