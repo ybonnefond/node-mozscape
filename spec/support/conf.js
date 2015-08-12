@@ -3,5 +3,5 @@ if (!process.env.SECRET) throw new Error('Set your SECRET as an environment vari
 module.exports = exports = {
   accessId: process.env.ACCESSID,
   secret: process.env.SECRET,
-  target: process.env.TARGET || 'ahrefs.com'
+  target: process.env.TARGET || 'http://moz.com'
 };

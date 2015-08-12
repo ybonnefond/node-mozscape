@@ -23,9 +23,19 @@ describe('Query', function () {
   });
 
   it('should imitialize the Query', function () {
-    expect(query.from).toEqual('links')
+    expect(query.api).toEqual('links')
     expect(query.definition).toBeDefined()
     expect(query.params).toEqual({});
+  });
+
+  it('should set a string target', function () {
+    query.target('http://moz.com');
+    expect(query.targets).toEqual('http://moz.com')
+  });
+
+  it('should set an array of targets', function () {
+    query.target(['http://moz.com', 'http://optimiz.me']);
+    expect(query.targets.length).toEqual(2)
   });
 
   it('should set a parameter', function () {
@@ -36,8 +46,8 @@ describe('Query', function () {
   describe('Simple parameters', function(){
 
     it('should set an accessId parameter', function () {
-      query.accessId(10);
-      expect(query.params.AccessID).toEqual(10);
+      query.accessId("1sasd0");
+      expect(query.params.AccessID).toEqual("1sasd0");
     });
 
     it('should set an expires parameter', function () {
@@ -81,6 +91,10 @@ describe('Query', function () {
 
     it('should not throw an exception if def is an enum and value is there', function () {
       expect(query.validate('Filter', 'internal')).toEqual('internal')
+    });
+
+    it('should not throw an exception if def is an enum and value is there', function () {
+      expect(query.validate('Filter', ['internal', '301'])).toEqual('internal+301')
     });
 
     it('should throw an exception if value of type string is an empty string', function () {
