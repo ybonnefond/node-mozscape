@@ -1,5 +1,5 @@
 {
-  "name": "moz",
+  "name": "node-mozscape",
   "description": "Moz API Nodejs client",
   "keywords": ["moz", "moz.com", "mozscape", "seo"],
   "homepage": "https://github.com/optimizme/node-moz",
