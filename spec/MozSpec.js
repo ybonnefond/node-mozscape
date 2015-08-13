@@ -5,7 +5,7 @@ describe('Query', function () {
 
   var moz;
 
-  beforeEach(function(){ moz = new Moz({ accessId: conf.accessId, secret: conf.secret })})
+  beforeEach(function(){ moz = Moz({ accessId: conf.accessId, secret: conf.secret })})
 
   it('should throw Error if no accessId', function () {
     expect(function(){

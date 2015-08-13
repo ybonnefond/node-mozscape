@@ -136,7 +136,7 @@ describe('Query', function () {
     });
 
     it('should return the sum of the bit flags', function () {
-      expect(query.validate('TargetCols', ['flags', 'anchor_text'])).toEqual(6)
+      expect(query.validate('TargetCols', ['title', 'subdomain'])).toEqual(9)
     });
 
   });
@@ -151,8 +151,8 @@ describe('Query', function () {
         .scope('page_to_page')
         .sort('page_authority')
         .filter('internal')
-        .targetCols(['flags', 'anchor_text'])
-        .sourceCols(['flags', 'anchor_text'])
+        .targetCols(['equity_links', 'subdomains_linking'])
+        .sourceCols(['links', 'moz_rank_url'])
         .linkCols(['flags', 'anchor_text'])
     }).not.toThrow()
   });
