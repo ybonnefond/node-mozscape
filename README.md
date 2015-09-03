@@ -1,4 +1,4 @@
-### Moz
+## Moz
 
 - [Get a moz authentication token and secret](https://moz.com/products/api/keys)
 - [Moz api documentation](https://moz.com/help/guides/moz-api/mozscape)
@@ -92,3 +92,6 @@ You can also run the tests agains your own target if needed (default is `moz.com
 Todo:
 - Support request frequency rate
 - Jsdoc
+
+# Thanks
+Developed for [Optimiz.me](http://optimiz.me), un logiciel qui permet d'optimiser soi-même le référencement de son site web, sans besoin de connaissances techniques
