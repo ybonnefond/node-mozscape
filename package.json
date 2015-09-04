@@ -16,7 +16,7 @@
     "email": "yannick.bonnefond@gmail.com",
     "url": "http://github.com/ybonnefond/"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Bambou",
   "dependencies": {
     "request": "^2.60.0"
