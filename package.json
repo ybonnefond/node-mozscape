@@ -1,14 +1,14 @@
 {
-  "name": "moz",
-  "description": "Moz API Nodejs client",
+  "name": "mozscape-request",
+  "description": "Nodejs client for Mozscape API",
   "keywords": ["moz", "moz.com", "mozscape", "seo", "moz api", "mozscape api"],
   "homepage": "https://github.com/optimizme/node-moz",
   "repository": {
     "type": "git",
-    "url": "git://github.com/optimizme/node-moz.git"
+    "url": "git://github.com/ybonnefond/node-mozscape.git"
   },
   "bugs": {
-    "url": "http://github.com/optimizme/node-moz/issues"
+    "url": "http://github.com/ybonnefond/node-mozscape/issues"
   },
   "license": "MIT",
   "author": {
