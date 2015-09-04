@@ -6,7 +6,7 @@
 ## installation
 
 ```bash
-  npm install node-mozscape
+  npm install mozscape-request
 ```
 
 ## Basic Usage
