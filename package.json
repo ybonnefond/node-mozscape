@@ -19,7 +19,7 @@
   },
   "license": "MIT",
   "author": "Bambou",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "dependencies": {
     "request": "^2.60.0"
   },
