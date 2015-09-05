@@ -1,7 +1,14 @@
 {
   "name": "mozscape-request",
   "description": "Nodejs client for Mozscape API",
-  "keywords": ["moz", "moz.com", "mozscape", "seo", "moz api", "mozscape api"],
+  "keywords": [
+    "moz",
+    "moz.com",
+    "mozscape",
+    "seo",
+    "moz api",
+    "mozscape api"
+  ],
   "homepage": "https://github.com/optimizme/node-moz",
   "repository": {
     "type": "git",
@@ -11,22 +18,19 @@
     "url": "http://github.com/ybonnefond/node-mozscape/issues"
   },
   "license": "MIT",
-  "author": {
-    "name": "Yannick Bonnefond",
-    "email": "yannick.bonnefond@gmail.com",
-    "url": "http://github.com/ybonnefond/"
-  },
-  "version": "0.0.2",
   "author": "Bambou",
+  "version": "0.0.2",
   "dependencies": {
     "request": "^2.60.0"
   },
   "devDependencies": {
-    "jasmine": "^2.3.2"
+    "jasmine": "^2.3.2",
+    "jsdoc-to-markdown": "^1.1.1"
   },
   "main": "./lib/Moz.js",
   "scripts": {
-    "test": "jasmine JASMINE_CONFIG_PATH=spec/support/jasmine.json"
+    "test": "./node_modules/.bin/jasmine JASMINE_CONFIG_PATH=spec/support/jasmine.json",
+    "doc": "./node_modules/.bin/jsdoc2md  'lib/**/*.js' > docs/api.md"
   },
   "engines": {
     "node": ">=0.8.0"
